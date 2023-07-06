@@ -1,0 +1,11 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+if(is_float($variable3))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = ("Hello" . $variable1);
+  trigger_error($variable2, E_USER_ERROR);
+}
+?>

@@ -1,0 +1,8 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+$variable0 = strpos($variable4, "needle");
+$variable2 = $variable0;
+$variable3 = (("<img src=\"" . $variable2) . "\"/>");
+exit($variable3);
+?>

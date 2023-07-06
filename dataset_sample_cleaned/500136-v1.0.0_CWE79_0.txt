@@ -1,0 +1,8 @@
+<?php
+$variable3 = filter_input_array(INPUT_GET, ["t" => FILTER_SANITIZE_ADD_SLASHES]);
+$variable3 = $variable3["t"];
+$variable0 = $variable3+= 0;
+$variable1 = $variable0;
+$variable2 = (("Hello to \"" . $variable1) . "\"");
+exit($variable2);
+?>

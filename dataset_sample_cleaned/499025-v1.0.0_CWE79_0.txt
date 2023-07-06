@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = base64_encode($variable3);
+$variable1 = $variable0;
+$variable2 = ("Hello" . $variable1);
+exit($variable2);
+?>

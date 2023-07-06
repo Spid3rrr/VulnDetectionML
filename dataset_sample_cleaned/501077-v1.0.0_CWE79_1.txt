@@ -1,0 +1,19 @@
+<?php
+$variable5iable3 = $variable5iable4;
+$variable5iable3 = $variable5iable3["t"];
+$variable5iable0 = $variable5iable3;
+function function0($variable5)
+{
+  global $variable6;
+  $variable6 = $variable5;
+}
+function function1()
+{
+  global $variable6;
+  return $variable6;
+}
+function0($variable5iable0);
+$variable5iable1 = function1();
+$variable5iable2 = ("Hello" . $variable5iable1);
+echo($variable5iable2);
+?>

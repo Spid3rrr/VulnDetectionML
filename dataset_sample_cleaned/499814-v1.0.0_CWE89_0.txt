@@ -1,0 +1,13 @@
+<?php
+$variable6 = new SQLite3("/var/www/db/database.db");
+$variable4 = getallheaders();
+$variable4 = $variable4["t"];
+$variable0 = filter_var($variable4, FILTER_SANITIZE_NUMBER_FLOAT);
+$variable1 = $variable0;
+$variable3 = (("SELECT * FROM users WHERE password =\"" . $variable1) . "\";");
+$variable2 = $variable6->query($variable3);
+while(($variable5 = $variable2->fetchArray()))
+{
+  echo(htmlentities(print_r($variable5, true)));
+}
+?>

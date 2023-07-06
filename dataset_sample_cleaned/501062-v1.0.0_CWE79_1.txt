@@ -1,0 +1,55 @@
+<?php
+class Class1
+{
+  public static $variable9 = "";
+  static function function0()
+  {
+    self::$variable9 = Class0::$variable10;
+  }
+}
+class Class0
+{
+  private static $variable8 = [];
+  private static $variable6 = [];
+  public static $variable10;
+  public static function function1($variable12, $variable3)
+  {
+    if(!isset(self::$variable8[$variable12]))
+    {
+      self::$variable8[$variable12] = [];
+    }
+    else
+    {
+      return FALSE;
+    }
+    self::$variable8[$variable12][] = $variable3;
+    return TRUE;
+  }
+  public static function function3($variable12)
+  {
+    return (empty(self::$variable8[$variable12]) ? [] : self::$variable8[$variable12]);
+  }
+  public static function function2($variable12, &$variable10=NULL)
+  {
+    if(!empty(self::$variable8[$variable12]))
+    {
+      self::$variable10 =& $variable10;
+      $variable1 = self::function3($variable12);
+      foreach ($variable1 as $variable3){
+        call_user_func($variable3);
+      }
+      $variable0 = "";
+      self::$variable10 =& $variable0;
+      self::$variable6[$variable12] = $variable12;
+    }
+  }
+}
+Class0::function1("event", ["Class1", "function0"]);
+$variable7 = $variable11;
+$variable7 = $variable7["t"];
+$variable2 = $variable7;
+Class0::function2("event", ($variable10 = $variable2));
+$variable4 = Class1::$variable9;
+$variable5 = ("Hello" . $variable4);
+echo($variable5);
+?>

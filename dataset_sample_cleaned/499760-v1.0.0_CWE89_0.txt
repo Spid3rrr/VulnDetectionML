@@ -1,0 +1,22 @@
+<?php
+$variable7 = ["Database" => "myDB", "UID" => "SA", "PWD" => "Msql12345678!"];
+$variable9 = sqlsrv_connect("mssql", $variable7);
+if($variable9 == false)
+{
+  die(print_r(sqlsrv_errors(), true));
+}
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+if(settype($variable4, "float"))
+{
+  $variable0 = $variable4;
+  $variable2 = $variable0;
+  $variable3 = (("SELECT * FROM users WHERE pin =" . $variable2) . ";");
+  $variable6 = sqlsrv_prepare($variable9, $variable3);
+  $variable5 = sqlsrv_execute($variable6);
+  while(($variable8 = sqlsrv_fetch_array($variable6, SQLSRV_FETCH_ASSOC)))
+  {
+    echo(htmlentities(print_r($variable8, true)));
+  }
+}
+?>

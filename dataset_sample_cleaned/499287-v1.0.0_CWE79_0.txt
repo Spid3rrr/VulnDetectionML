@@ -1,0 +1,11 @@
+<?php
+$variable3 = filter_input_array(INPUT_GET, ["t" => FILTER_SANITIZE_NUMBER_INT]);
+$variable3 = $variable3["t"];
+if(settype($variable3, "bool"))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = (("<img src=\"" . $variable1) . "\"/>");
+  user_error($variable2);
+}
+?>

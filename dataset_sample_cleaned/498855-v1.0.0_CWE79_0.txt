@@ -1,0 +1,13 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+if(preg_match("/^[0-9]*$/", $variable4))
+{
+  $variable0 = $variable4;
+  $variable2 = $variable0;
+  $variable6 = "<script>alert(\"Hello";
+  $variable5 = "\");</script>";
+  $variable3 = ($variable6 . ($variable2 . $variable5));
+  user_error($variable3);
+}
+?>

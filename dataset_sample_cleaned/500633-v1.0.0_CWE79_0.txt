@@ -1,0 +1,13 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+if(is_numeric($variable3))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable6 = "<script>alert(Hello";
+  $variable5 = ");</script>";
+  $variable2 = ($variable6 . ($variable1 . $variable5));
+  print($variable2);
+}
+?>

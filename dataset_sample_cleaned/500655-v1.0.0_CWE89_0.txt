@@ -1,0 +1,19 @@
+<?php
+$variable7 = "DATABASE=myDB;HOSTNAME=ibm_db2;PORT=50000;PROTOCOL=TCPIP;UID=db2inst1;PWD=ibm_db2_pw;";
+$variable9 = db2_connect($variable7, "", "");
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = strrpos($variable3, "needle");
+$variable1 = $variable0;
+$variable2 = (("SELECT * FROM users WHERE pin =" . $variable1) . ";");
+$variable6 = db2_prepare($variable9, $variable2);
+if($variable6 == false)
+{
+  die(db2_stmt_errormsg());
+}
+$variable5 = db2_execute($variable6, []);
+while(($variable8 = db2_fetch_array($variable6)))
+{
+  echo(htmlentities(print_r($variable8, true)));
+}
+?>

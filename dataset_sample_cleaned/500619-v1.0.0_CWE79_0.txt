@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = htmlentities($variable3, ENT_NOQUOTES);
+$variable1 = $variable0;
+$variable2 = (("Hello to '" . $variable1) . "'");
+user_error($variable2);
+?>

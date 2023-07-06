@@ -1,0 +1,12 @@
+<?php
+$variable6 = new SQLite3("/var/www/db/database.db");
+$variable4 = apache_request_headers();
+$variable0 = json_encode($variable4, ENT_COMPAT);
+$variable1 = $variable0;
+$variable3 = (("SELECT * FROM users WHERE password ='" . $variable1) . "';");
+$variable2 = $variable6->query($variable3);
+while(($variable5 = $variable2->fetchArray()))
+{
+  echo(htmlentities(print_r($variable5, true)));
+}
+?>

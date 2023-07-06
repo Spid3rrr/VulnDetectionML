@@ -1,0 +1,8 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+$variable0 = hash_hmac("md5", $variable3, "salt");
+$variable1 = $variable0;
+$variable2 = (("<img src=\"" . $variable1) . "\"/>");
+echo($variable2);
+?>

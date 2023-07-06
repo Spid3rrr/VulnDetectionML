@@ -1,0 +1,17 @@
+<?php
+$variable5 = ["Database" => "myDB", "UID" => "SA", "PWD" => "Msql12345678!"];
+$variable7 = sqlsrv_connect("mssql", $variable5);
+if($variable7 == false)
+{
+  die(print_r(sqlsrv_errors(), true));
+}
+$variable3 = filter_input(INPUT_GET, "t", FILTER_SANITIZE_ADD_SLASHES);
+$variable0 = str_replace("'", "''", $variable3);
+$variable1 = $variable0;
+$variable2 = (("SELECT * FROM users WHERE password =\"" . $variable1) . "\";");
+$variable4 = sqlsrv_query($variable7, $variable2);
+while(($variable6 = sqlsrv_fetch_object($variable4)))
+{
+  echo(htmlentities(print_r($variable6, true)));
+}
+?>

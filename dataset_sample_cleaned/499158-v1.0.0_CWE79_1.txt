@@ -1,0 +1,11 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+if(gettype($variable4) == "string")
+{
+  $variable0 = $variable4;
+  $variable2 = $variable0;
+  $variable3 = ("Hello" . $variable2);
+  vprintf("This%s", $variable3);
+}
+?>

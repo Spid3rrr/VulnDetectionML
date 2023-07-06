@@ -1,0 +1,14 @@
+<?php
+$variable7 = new SQLite3("/var/www/db/database.db");
+$variable4 = $variable5;
+$variable4 = $variable4["t"];
+parse_str($variable4, $variable0);
+$variable0 = implode($variable0, "_");
+$variable1 = $variable0;
+$variable3 = (("SELECT * FROM users WHERE password ='" . $variable1) . "';");
+$variable2 = $variable7->query($variable3);
+while(($variable6 = $variable2->fetchArray()))
+{
+  echo(htmlentities(print_r($variable6, true)));
+}
+?>

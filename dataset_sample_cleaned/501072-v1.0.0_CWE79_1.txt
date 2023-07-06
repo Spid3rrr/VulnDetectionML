@@ -1,0 +1,16 @@
+<?php
+$variable7 = $variable9;
+$variable7 = $variable7["t"];
+$variable4 = $variable7;
+function function0($variable8)
+{
+  return $variable8;
+}
+$variable0 = "san";
+$variable1 = "iti";
+$variable2 = "ze";
+$variable3 = (($variable0 . $variable1) . $variable2);
+$variable5 = call_user_func($variable3, $variable4);
+$variable6 = ("Hello" . $variable5);
+echo($variable6);
+?>

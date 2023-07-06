@@ -1,0 +1,9 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+$variable0 = str_getcsv($variable4);
+$variable0 = implode($variable0, "_");
+$variable2 = $variable0;
+$variable3 = (("<img src=\"" . $variable2) . "\"/>");
+printf("Print this: %s", $variable3);
+?>

@@ -1,0 +1,7 @@
+<?php
+$variable3 = filter_input(INPUT_GET, "t", FILTER_UNSAFE_RAW);
+$variable0 = soundex($variable3);
+$variable1 = $variable0;
+$variable2 = (("Hello to \"" . $variable1) . "\"");
+printf("Print this: %d", $variable2);
+?>

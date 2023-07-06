@@ -1,0 +1,12 @@
+<?php
+$variable7 = new SQLite3("/var/www/db/database.db");
+$variable4 = $variable5;
+$variable0 = http_build_query($variable4);
+$variable1 = $variable0;
+$variable3 = (("SELECT * FROM users WHERE password ='" . $variable1) . "';");
+$variable2 = $variable7->query($variable3);
+while(($variable6 = $variable2->fetchArray()))
+{
+  echo(htmlentities(print_r($variable6, true)));
+}
+?>

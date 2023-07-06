@@ -1,0 +1,8 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+$variable0 = crypt($variable3);
+$variable1 = $variable0;
+$variable2 = (("Hello to '" . $variable1) . "'");
+exit($variable2);
+?>

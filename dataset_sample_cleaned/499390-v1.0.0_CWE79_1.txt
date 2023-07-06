@@ -1,0 +1,7 @@
+<?php
+$variable3 = $variable4;
+$variable0 = json_encode($variable3, ENT_COMPAT);
+$variable1 = $variable0;
+$variable2 = (("Hello to \"" . $variable1) . "\"");
+echo($variable2);
+?>

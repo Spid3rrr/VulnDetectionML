@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = hash("ripemd160", $variable3, false);
+$variable1 = $variable0;
+$variable2 = ("Hello" . $variable1);
+user_error($variable2);
+?>

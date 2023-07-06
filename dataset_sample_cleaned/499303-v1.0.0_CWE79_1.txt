@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = preg_replace("/'/", "", $variable3);
+$variable1 = $variable0;
+$variable2 = (("<img src=\"" . $variable1) . "\"/>");
+vprintf("This%s", $variable2);
+?>

@@ -1,0 +1,10 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+$variable0 = gzcompress($variable3);
+$variable1 = $variable0;
+$variable5 = "<script>alert(Hello";
+$variable4 = ");</script>";
+$variable2 = ($variable5 . ($variable1 . $variable4));
+echo($variable2);
+?>

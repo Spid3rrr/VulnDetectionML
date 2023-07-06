@@ -1,0 +1,11 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+if(ctype_alnum($variable4))
+{
+  $variable0 = $variable4;
+  $variable2 = $variable0;
+  $variable3 = (("<img src=\"" . $variable2) . "\"/>");
+  trigger_error($variable3, E_USER_ERROR);
+}
+?>

@@ -1,0 +1,14 @@
+<?php
+$variable7 = pg_pconnect("host=postgres-server port=5432 user=postgres password=postgres123 dbname=myDB");
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = mhash(MHASH_MD4, $variable3);
+$variable1 = $variable0;
+$variable2 = (("SELECT * FROM users WHERE pin =" . $variable1) . ";");
+pg_send_query($variable7, $variable2);
+$variable5 = pg_get_result($variable7);
+while(($variable6 = pg_fetch_row($variable5)))
+{
+  echo(htmlentities(print_r($variable6, true)));
+}
+?>

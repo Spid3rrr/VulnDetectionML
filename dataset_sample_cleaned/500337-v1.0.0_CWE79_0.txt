@@ -1,0 +1,11 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+if(is_bool($variable4))
+{
+  $variable0 = $variable4;
+  $variable2 = $variable0;
+  $variable3 = (("<a href=\"" . $variable2) . "\">link</a>");
+  exit($variable3);
+}
+?>

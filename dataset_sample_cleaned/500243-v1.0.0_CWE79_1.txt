@@ -1,0 +1,7 @@
+<?php
+$variable3 = filter_input(INPUT_GET, "t", FILTER_SANITIZE_URL);
+$variable0 = filter_var($variable3, FILTER_UNSAFE_RAW);
+$variable1 = $variable0;
+$variable2 = (("<img src=\"" . $variable1) . "\"/>");
+print($variable2);
+?>

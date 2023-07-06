@@ -1,0 +1,7 @@
+<?php
+$variable3 = filter_input(INPUT_GET, "t", FILTER_SANITIZE_EMAIL);
+$variable0 = floatval($variable3);
+$variable1 = $variable0;
+$variable2 = (("<a href=\"" . $variable1) . "\">link</a>");
+user_error($variable2);
+?>

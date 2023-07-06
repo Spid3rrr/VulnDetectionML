@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = strip_tags($variable3);
+$variable1 = $variable0;
+$variable2 = (("<img src=\"" . $variable1) . "\"/>");
+echo($variable2);
+?>

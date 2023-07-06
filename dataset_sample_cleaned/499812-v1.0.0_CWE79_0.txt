@@ -1,0 +1,8 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+$variable0 = htmlentities($variable4);
+$variable2 = $variable0;
+$variable3 = ("Hello" . $variable2);
+printf("Print this: %d", $variable3);
+?>

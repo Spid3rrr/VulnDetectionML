@@ -1,0 +1,12 @@
+<?php
+$variable6 = new PDO("mysql:host=mysql;port=3306;dbname=myDB", "username", "password");
+$variable4 = filter_input_array(INPUT_GET, ["t" => FILTER_SANITIZE_NUMBER_FLOAT]);
+$variable0 = http_build_query($variable4);
+$variable1 = $variable0;
+$variable3 = (("SELECT * FROM users WHERE pin =" . $variable1) . ";");
+$variable5 = $variable6->prepare($variable3);
+$variable2 = $variable5->execute([]);
+foreach ($variable5->fetchAll() as $variable7){
+  echo(htmlentities(print_r($variable7, true)));
+}
+?>

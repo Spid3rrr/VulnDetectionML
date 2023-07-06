@@ -1,0 +1,11 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+if(is_integer($variable4))
+{
+  $variable0 = $variable4;
+  $variable2 = $variable0;
+  $variable3 = (("Hello to \"" . $variable2) . "\"");
+  user_error($variable3);
+}
+?>

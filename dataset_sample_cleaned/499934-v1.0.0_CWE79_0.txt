@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = md5($variable3, false);
+$variable1 = $variable0;
+$variable2 = (("Hello to \"" . $variable1) . "\"");
+vprintf("This%d", $variable2);
+?>

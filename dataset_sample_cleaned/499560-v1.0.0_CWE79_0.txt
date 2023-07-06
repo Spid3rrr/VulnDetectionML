@@ -1,0 +1,8 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+$variable0 = filter_var($variable3, FILTER_SANITIZE_SPECIAL_CHARS);
+$variable1 = $variable0;
+$variable2 = (("<img src=\"" . $variable1) . "\"/>");
+trigger_error($variable2, E_USER_ERROR);
+?>

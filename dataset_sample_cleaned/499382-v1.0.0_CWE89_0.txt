@@ -1,0 +1,15 @@
+<?php
+$variable6 = new PDO("mysql:host=mysql;port=3306;dbname=myDB", "username", "password");
+$variable5 = $variable1;
+$variable5 = $variable5["t"];
+if(gettype($variable5) == "double")
+{
+  $variable0 = $variable5;
+  $variable2 = $variable0;
+  $variable4 = (("SELECT * FROM users WHERE pin =" . $variable2) . ";");
+  $variable3 = $variable6->query($variable4);
+  foreach ($variable3 as $variable7){
+    echo(htmlentities(print_r($variable7, true)));
+  }
+}
+?>

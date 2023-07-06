@@ -1,0 +1,8 @@
+<?php
+$variable3 = apache_request_headers();
+$variable3 = $variable3["t"];
+$variable0 = filter_var($variable3, FILTER_UNSAFE_RAW);
+$variable1 = $variable0;
+$variable2 = (("<img src=\"" . $variable1) . "\"/>");
+user_error($variable2);
+?>

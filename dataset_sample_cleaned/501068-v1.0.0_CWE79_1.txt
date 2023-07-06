@@ -1,0 +1,15 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = $variable3;
+$variable5 = explode("xsvcfr", $variable0);
+foreach ($variable5 as $variable6 => $variable7){
+  if(strpos($variable7, ">") !== false)
+  {
+    $variable5[$variable6] = "0";
+  }
+}
+$variable1 = implode(">", $variable5);
+$variable2 = ("Hello" . $variable1);
+echo($variable2);
+?>

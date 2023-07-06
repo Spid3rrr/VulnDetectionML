@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = strrpos($variable3, "needle");
+$variable1 = $variable0;
+$variable2 = (("Hello to '" . $variable1) . "'");
+printf("Print this: %s", $variable2);
+?>

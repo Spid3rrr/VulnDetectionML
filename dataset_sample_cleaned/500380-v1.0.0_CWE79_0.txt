@@ -1,0 +1,8 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+$variable0 = ($variable3 + 0);
+$variable1 = $variable0;
+$variable2 = ("Hello" . $variable1);
+printf("Print this: %s", $variable2);
+?>

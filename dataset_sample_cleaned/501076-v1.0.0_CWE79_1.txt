@@ -1,0 +1,31 @@
+<?php
+class Class1
+{
+  private $variable9;
+  public function function0($variable9)
+  {
+    $variable8->val = $variable9;
+  }
+  public function function1()
+  {
+    return $variable8->val;
+  }
+}
+class Class0
+{
+  public static function function2()
+  {
+    $variable6 = func_get_args();
+    $variable5 = array_shift($variable6);
+    $variable0 = new ReflectionClass($variable5);
+    return $variable0->newInstanceArgs($variable6);
+  }
+}
+$variable4 = $variable7;
+$variable4 = $variable4["t"];
+$variable1 = $variable4;
+$variable10 = Class0::function2("Class1", $variable1);
+$variable2 = $variable10->function1();
+$variable3 = ("Hello" . $variable2);
+echo($variable3);
+?>

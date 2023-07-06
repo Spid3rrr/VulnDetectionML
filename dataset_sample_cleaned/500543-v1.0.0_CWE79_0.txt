@@ -1,0 +1,12 @@
+<?php
+$variable4 = ["safe1", "safe2"];
+$variable3 = $variable5;
+$variable3 = $variable3["t"];
+if(in_array($variable3, $variable4, true))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = (("Hello to '" . $variable1) . "'");
+  vprintf("This%d", $variable2);
+}
+?>

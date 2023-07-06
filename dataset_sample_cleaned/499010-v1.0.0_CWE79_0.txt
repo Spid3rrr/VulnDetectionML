@@ -1,0 +1,8 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+$variable0 = str_shuffle($variable4);
+$variable2 = $variable0;
+$variable3 = (("<a href=\"" . $variable2) . "\">link</a>");
+printf("Print this: %d", $variable3);
+?>

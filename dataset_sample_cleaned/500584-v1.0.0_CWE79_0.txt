@@ -1,0 +1,11 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+if(is_real($variable3))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = ("Hello" . $variable1);
+  echo($variable2);
+}
+?>

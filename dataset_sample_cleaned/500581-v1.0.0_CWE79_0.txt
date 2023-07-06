@@ -1,0 +1,11 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+if(gettype($variable4) == "boolean")
+{
+  $variable0 = $variable4;
+  $variable2 = $variable0;
+  $variable3 = (("Hello to '" . $variable2) . "'");
+  trigger_error($variable3, E_USER_ERROR);
+}
+?>

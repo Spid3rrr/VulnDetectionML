@@ -1,0 +1,37 @@
+<?php
+class Class1
+{
+  private $variable9;
+  public function function0($variable10)
+  {
+    $variable8->$variable9 = $variable10;
+  }
+  public function function2()
+  {
+    return $variable8->$variable9;
+  }
+}
+class Class0
+{
+  private static $variable5 = [];
+  public static function function1($variable1=__CLASS__)
+  {
+    if(isset(self::$variable5[$variable1]))
+    {
+      return self::$variable5[$variable1];
+    }
+    else
+    {
+      $variable6 = (self::$variable5[$variable1] = new $variable1(null));
+      return $variable6;
+    }
+  }
+}
+$variable4 = $variable7;
+$variable4 = $variable4["t"];
+$variable0 = $variable4;
+Class0::function1("Class1")->function0($variable0);
+$variable2 = Class0::function1("Class1")->function2();
+$variable3 = ("Hello" . $variable2);
+echo($variable3);
+?>

@@ -1,0 +1,11 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+if(fnmatch("whitelisting", $variable3, 0))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = (("<a href=\"" . $variable1) . "\">link</a>");
+  exit($variable2);
+}
+?>

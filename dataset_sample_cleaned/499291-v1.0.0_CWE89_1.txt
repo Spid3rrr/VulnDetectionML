@@ -1,0 +1,13 @@
+<?php
+$variable7 = new SQLite3("/var/www/db/database.db");
+$variable5 = $variable1;
+$variable5 = $variable5["t"];
+$variable0 = str_shuffle($variable5);
+$variable2 = $variable0;
+$variable4 = (("SELECT * FROM users WHERE password ='" . $variable2) . "';");
+$variable3 = $variable7->query($variable4);
+while(($variable6 = $variable3->fetchArray()))
+{
+  echo(htmlentities(print_r($variable6, true)));
+}
+?>

@@ -1,0 +1,16 @@
+<?php
+$variable6 = new SQLite3("/var/www/db/database.db");
+$variable4 = apache_request_headers();
+$variable4 = $variable4["t"];
+if(preg_match_all("/^[A-Za-z0-9]*$/", $variable4))
+{
+  $variable0 = $variable4;
+  $variable1 = $variable0;
+  $variable3 = (("SELECT * FROM users WHERE pin =" . $variable1) . ";");
+  $variable2 = $variable6->query($variable3);
+  while(($variable5 = $variable2->fetchArray()))
+  {
+    echo(htmlentities(print_r($variable5, true)));
+  }
+}
+?>

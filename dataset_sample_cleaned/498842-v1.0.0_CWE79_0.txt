@@ -1,0 +1,11 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+if(preg_match("/^[0-9]*$/", $variable3))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = (("<img src=\"" . $variable1) . "\"/>");
+  vprintf("This%s", $variable2);
+}
+?>

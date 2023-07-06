@@ -1,0 +1,12 @@
+<?php
+$variable3 = $variable6;
+$variable3 = $variable3["t"];
+$variable0 = $variable3;
+function function0($variable5, &$variable4)
+{
+  $variable4 = $variable5;
+}
+function0($variable0, $variable1);
+$variable2 = ("Hello" . $variable1);
+echo($variable2);
+?>

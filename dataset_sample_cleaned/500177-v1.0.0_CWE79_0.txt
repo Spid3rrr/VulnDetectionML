@@ -1,0 +1,11 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+if(is_long($variable3))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = (("<img src=\"" . $variable1) . "\"/>");
+  echo($variable2);
+}
+?>

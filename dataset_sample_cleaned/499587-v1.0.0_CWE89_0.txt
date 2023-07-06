@@ -1,0 +1,15 @@
+<?php
+$variable5 = new PDO("mysql:host=mysql;port=3306;dbname=myDB", "username", "password");
+$variable4 = filter_input_array(INPUT_GET, ["t" => FILTER_SANITIZE_URL]);
+$variable4 = $variable4["t"];
+if(gettype($variable4) == "boolean")
+{
+  $variable0 = $variable4;
+  $variable1 = $variable0;
+  $variable3 = (("SELECT * FROM users WHERE pin =" . $variable1) . ";");
+  $variable2 = $variable5->query($variable3);
+  foreach ($variable2 as $variable6){
+    echo(htmlentities(print_r($variable6, true)));
+  }
+}
+?>

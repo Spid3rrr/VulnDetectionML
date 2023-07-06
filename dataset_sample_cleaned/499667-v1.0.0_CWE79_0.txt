@@ -1,0 +1,13 @@
+<?php
+$variable3 = filter_input_array(INPUT_GET, ["t" => FILTER_UNSAFE_RAW]);
+$variable3 = $variable3["t"];
+if(preg_match("/^[A-Za-z]*$/", $variable3))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable5 = "<script>alert(Hello";
+  $variable4 = ");</script>";
+  $variable2 = ($variable5 . ($variable1 . $variable4));
+  vprintf("This%s", $variable2);
+}
+?>

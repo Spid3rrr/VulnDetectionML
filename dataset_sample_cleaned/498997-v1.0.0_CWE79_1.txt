@@ -1,0 +1,7 @@
+<?php
+$variable4 = $variable1;
+$variable0 = json_encode($variable4, JSON_PRETTY_PRINT, 512);
+$variable2 = $variable0;
+$variable3 = (("<img src=\"" . $variable2) . "\"/>");
+echo($variable3);
+?>

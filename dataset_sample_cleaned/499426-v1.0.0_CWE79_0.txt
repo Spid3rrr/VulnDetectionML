@@ -1,0 +1,8 @@
+<?php
+$variable3 = filter_input_array(INPUT_GET, ["t" => FILTER_SANITIZE_FULL_SPECIAL_CHARS]);
+$variable3 = $variable3["t"];
+$variable0 = sha1($variable3, false);
+$variable1 = $variable0;
+$variable2 = ("Hello" . $variable1);
+echo($variable2);
+?>

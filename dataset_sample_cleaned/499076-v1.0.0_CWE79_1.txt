@@ -1,0 +1,11 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+$variable0 = sscanf($variable4, "foo %s");
+$variable0 = implode($variable0, "_");
+$variable2 = $variable0;
+$variable6 = "<script>alert(\"Hello";
+$variable5 = "\");</script>";
+$variable3 = ($variable6 . ($variable2 . $variable5));
+vprintf("This%s", $variable3);
+?>

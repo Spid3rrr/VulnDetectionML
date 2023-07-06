@@ -1,0 +1,12 @@
+<?php
+$variable7 = pg_pconnect("host=postgres-server port=5432 user=postgres password=postgres123 dbname=myDB");
+$variable3 = $variable5;
+$variable0 = sizeof($variable3, COUNT_NORMAL);
+$variable1 = $variable0;
+$variable2 = (("SELECT * FROM users WHERE password ='" . $variable1) . "';");
+$variable4 = pg_query($variable7, $variable2);
+while(($variable6 = pg_fetch_row($variable4)))
+{
+  echo(htmlentities(print_r($variable6, true)));
+}
+?>

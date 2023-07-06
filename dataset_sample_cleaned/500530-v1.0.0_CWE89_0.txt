@@ -1,0 +1,19 @@
+<?php
+$variable0 = "mysql";
+$variable2 = "username";
+$variable4 = "password";
+$variable9 = "myDB";
+$variable12 = new mysqli($variable0, $variable2, $variable4, $variable9);
+$variable7 = $variable8;
+$variable7 = $variable7["t"];
+$variable1 = strrpos($variable7, "needle");
+$variable3 = $variable1;
+$variable6 = (("SELECT * FROM users WHERE password ='" . $variable3) . "';");
+$variable10 = mysqli_prepare($variable12, $variable6);
+mysqli_stmt_execute($variable10);
+$variable5 = mysqli_stmt_get_result($variable10);
+while(($variable11 = $variable5->fetch_row()))
+{
+  echo(htmlentities(print_r($variable11, true)));
+}
+?>

@@ -1,0 +1,8 @@
+<?php
+$variable3 = apache_request_headers();
+$variable3 = $variable3["t"];
+$variable0 = filter_var($variable3, FILTER_SANITIZE_NUMBER_FLOAT);
+$variable1 = $variable0;
+$variable2 = (("<a href=\"" . $variable1) . "\">link</a>");
+user_error($variable2);
+?>

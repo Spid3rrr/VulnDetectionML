@@ -1,0 +1,21 @@
+<?php
+$variable4 = $variable7;
+$variable4 = $variable4["t"];
+$variable0 = $variable4;
+class Class0
+{
+  function function0($variable1)
+  {
+    return $variable8->property;
+  }
+  function function1($variable1, $variable6)
+  {
+    $variable8->property = $variable6;
+  }
+}
+$variable5 = new Class0();
+$variable5->value = $variable0;
+$variable2 = $variable5->value;
+$variable3 = ("Hello" . $variable2);
+echo($variable3);
+?>

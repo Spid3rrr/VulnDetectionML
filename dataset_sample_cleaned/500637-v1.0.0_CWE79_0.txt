@@ -1,0 +1,10 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+$variable0 = substr_replace($variable4, "bob", 0);
+$variable2 = $variable0;
+$variable6 = "<script>alert(Hello";
+$variable5 = ");</script>";
+$variable3 = ($variable6 . ($variable2 . $variable5));
+exit($variable3);
+?>

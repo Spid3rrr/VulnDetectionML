@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = str_word_count($variable3, 0);
+$variable1 = $variable0;
+$variable2 = (("<a href=\"" . $variable1) . "\">link</a>");
+printf("Print this: %d", $variable2);
+?>

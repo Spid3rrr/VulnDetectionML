@@ -1,0 +1,11 @@
+<?php
+$variable3 = getallheaders();
+$variable3 = $variable3["t"];
+parse_str($variable3, $variable0);
+$variable0 = implode($variable0, "_");
+$variable1 = $variable0;
+$variable5 = "<script>alert(\"Hello";
+$variable4 = "\");</script>";
+$variable2 = ($variable5 . ($variable1 . $variable4));
+user_error($variable2);
+?>

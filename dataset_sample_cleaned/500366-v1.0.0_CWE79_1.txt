@@ -1,0 +1,8 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = filter_var($variable3, FILTER_SANITIZE_URL);
+$variable1 = $variable0;
+$variable2 = (("Hello to \"" . $variable1) . "\"");
+printf("Print this: %s", $variable2);
+?>

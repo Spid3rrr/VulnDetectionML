@@ -1,0 +1,13 @@
+<?php
+$variable6 = new PDO("mysql:host=mysql;port=3306;dbname=myDB", "username", "password");
+$variable4 = getallheaders();
+$variable4 = $variable4["t"];
+$variable0 = zlib_encode($variable4, ZLIB_ENCODING_DEFLATE);
+$variable1 = $variable0;
+$variable3 = (("SELECT * FROM users WHERE password =\"" . $variable1) . "\";");
+$variable5 = $variable6->prepare($variable3);
+$variable2 = $variable5->execute([]);
+foreach ($variable5->fetchAll() as $variable7){
+  echo(htmlentities(print_r($variable7, true)));
+}
+?>

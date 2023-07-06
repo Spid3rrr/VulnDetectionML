@@ -1,0 +1,9 @@
+<?php
+$variable4 = $variable1;
+$variable0 = json_encode($variable4, ENT_NOQUOTES);
+$variable2 = $variable0;
+$variable6 = "<script>alert(\"Hello";
+$variable5 = "\");</script>";
+$variable3 = ($variable6 . ($variable2 . $variable5));
+printf("Print this: %s", $variable3);
+?>

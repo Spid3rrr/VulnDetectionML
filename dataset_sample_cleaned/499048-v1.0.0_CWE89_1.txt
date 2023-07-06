@@ -1,0 +1,21 @@
+<?php
+$variable0 = "mysql";
+$variable2 = "username";
+$variable5 = "password";
+$variable9 = "myDB";
+$variable11 = new mysqli($variable0, $variable2, $variable5, $variable9);
+$variable8 = $variable3;
+$variable8 = $variable8["t"];
+if(settype($variable8, "string"))
+{
+  $variable1 = $variable8;
+  $variable4 = $variable1;
+  $variable7 = (("SELECT * FROM users WHERE pin =" . $variable4) . ";");
+  $variable11->real_query($variable7);
+  $variable6 = $variable11->use_result();
+  while(($variable10 = $variable6->fetch_row()))
+  {
+    echo(htmlentities(print_r($variable10, true)));
+  }
+}
+?>

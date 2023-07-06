@@ -1,0 +1,13 @@
+<?php
+$variable7 = new SQLite3("/var/www/db/database.db");
+$variable4 = $variable5;
+$variable4 = $variable4["t"];
+$variable0 = strspn($variable4, "needle)");
+$variable1 = $variable0;
+$variable3 = (("SELECT * FROM users WHERE pin =" . $variable1) . ";");
+$variable2 = $variable7->query($variable3);
+while(($variable6 = $variable2->fetchArray()))
+{
+  echo(htmlentities(print_r($variable6, true)));
+}
+?>

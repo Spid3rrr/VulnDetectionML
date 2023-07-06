@@ -1,0 +1,22 @@
+<?php
+$variable4 = $variable7;
+$variable4 = $variable4["t"];
+$variable1 = $variable4;
+class Class0
+{
+  protected $variable6 = "";
+  public function function1($variable0, $variable9)
+  {
+    $variable8->$variable0 = $variable9;
+  }
+  public function function0()
+  {
+    return $variable8->input;
+  }
+}
+$variable5 = new Class0();
+$variable5->function1("input", $variable1);
+$variable2 = $variable5->function0();
+$variable3 = ("Hello" . $variable2);
+echo($variable3);
+?>

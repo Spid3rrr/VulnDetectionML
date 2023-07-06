@@ -1,0 +1,11 @@
+<?php
+$variable4 = $variable1;
+$variable4 = $variable4["t"];
+if(settype($variable4, "string"))
+{
+  $variable0 = $variable4;
+  $variable2 = $variable0;
+  $variable3 = (("<img src=\"" . $variable2) . "\"/>");
+  vprintf("This%d", $variable3);
+}
+?>

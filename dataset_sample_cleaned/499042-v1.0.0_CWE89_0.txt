@@ -1,0 +1,19 @@
+<?php
+$variable0 = "mysql";
+$variable2 = "username";
+$variable4 = "password";
+$variable8 = "myDB";
+$variable10 = new mysqli($variable0, $variable2, $variable4, $variable8);
+$variable7 = filter_input_array(INPUT_GET, ["t" => FILTER_SANITIZE_NUMBER_FLOAT]);
+$variable7 = $variable7["t"];
+$variable1 = sscanf($variable7, "foo %d");
+$variable1 = implode($variable1, "_");
+$variable3 = $variable1;
+$variable6 = (("SELECT * FROM users WHERE password ='" . $variable3) . "';");
+mysqli_multi_query($variable10, $variable6);
+$variable5 = $variable10->use_result();
+while(($variable9 = $variable5->fetch_row()))
+{
+  echo(htmlentities(print_r($variable9, true)));
+}
+?>

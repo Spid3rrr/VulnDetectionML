@@ -1,0 +1,33 @@
+<?php
+$variable4 = $variable8;
+$variable4 = $variable4["t"];
+$variable0 = $variable4;
+class Class1
+{
+  function function0($variable1)
+  {
+    $variable6 = ("get" . $variable1);
+    if(method_exists($variable9, $variable6))
+    {
+      return $variable9->$variable6();
+    }
+  }
+}
+class Class0 extends Class1
+{
+  protected $variable7 = "";
+  function function2()
+  {
+    return $variable9->value;
+  }
+  function function1($variable10)
+  {
+    $variable9->value = $variable10;
+  }
+}
+$variable5 = new Class0();
+$variable5->function1($variable0);
+$variable2 = $variable5->value;
+$variable3 = ("Hello" . $variable2);
+echo($variable3);
+?>

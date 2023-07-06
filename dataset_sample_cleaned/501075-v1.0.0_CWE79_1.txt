@@ -1,0 +1,9 @@
+<?php
+$variable3 = $variable5;
+$variable3 = $variable3["t"];
+$variable0 = $variable3;
+$variable6 = ["foo", $variable0];
+[$variable4, $variable1] = $variable6;
+$variable2 = ("Hello" . $variable1);
+echo($variable2);
+?>

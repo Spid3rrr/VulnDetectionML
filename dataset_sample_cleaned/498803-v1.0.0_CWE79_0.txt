@@ -1,0 +1,7 @@
+<?php
+$variable3 = filter_input(INPUT_GET, "t", FILTER_UNSAFE_RAW);
+$variable0 = password_hash($variable3, PASSWORD_DEFAULT);
+$variable1 = $variable0;
+$variable2 = (("Hello to \"" . $variable1) . "\"");
+vprintf("This%d", $variable2);
+?>

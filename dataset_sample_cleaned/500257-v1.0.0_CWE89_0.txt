@@ -1,0 +1,12 @@
+<?php
+$variable6 = new SQLite3("/var/www/db/database.db");
+$variable4 = filter_input(INPUT_GET, "t", FILTER_UNSAFE_RAW);
+$variable0 = md5($variable4, false);
+$variable1 = $variable0;
+$variable3 = (("SELECT * FROM users WHERE password ='" . $variable1) . "';");
+$variable2 = $variable6->query($variable3);
+while(($variable5 = $variable2->fetchArray()))
+{
+  echo(htmlentities(print_r($variable5, true)));
+}
+?>

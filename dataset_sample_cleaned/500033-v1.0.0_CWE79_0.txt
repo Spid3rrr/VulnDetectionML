@@ -1,0 +1,9 @@
+<?php
+$variable3 = getallheaders();
+$variable0 = json_encode($variable3, JSON_PRETTY_PRINT, 512);
+$variable1 = $variable0;
+$variable5 = "<script>alert(Hello";
+$variable4 = ");</script>";
+$variable2 = ($variable5 . ($variable1 . $variable4));
+vprintf("This%d", $variable2);
+?>

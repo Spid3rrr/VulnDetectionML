@@ -1,0 +1,18 @@
+<?php
+$variable6 = "DATABASE=myDB;HOSTNAME=ibm_db2;PORT=50000;PROTOCOL=TCPIP;UID=db2inst1;PWD=ibm_db2_pw;";
+$variable8 = db2_connect($variable6, "", "");
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+$variable0 = ($variable3 + 0);
+$variable1 = $variable0;
+$variable2 = (("SELECT * FROM users WHERE password ='" . $variable1) . "';");
+$variable5 = db2_exec($variable8, $variable2);
+if($variable5 == false)
+{
+  die(db2_stmt_errormsg());
+}
+while(($variable7 = db2_fetch_array($variable5)))
+{
+  echo(htmlentities(print_r($variable7, true)));
+}
+?>

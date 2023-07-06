@@ -1,0 +1,16 @@
+<?php
+$variable7 = new PDO("mysql:host=mysql;port=3306;dbname=myDB", "username", "password");
+$variable5 = $variable1;
+$variable5 = $variable5["t"];
+if(gettype($variable5) == "double")
+{
+  $variable0 = $variable5;
+  $variable2 = $variable0;
+  $variable4 = (("SELECT * FROM users WHERE password ='" . $variable2) . "';");
+  $variable6 = $variable7->prepare($variable4);
+  $variable3 = $variable6->execute([]);
+  foreach ($variable6->fetchAll() as $variable8){
+    echo(htmlentities(print_r($variable8, true)));
+  }
+}
+?>

@@ -1,0 +1,11 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+if(is_bool($variable3))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = (("<img src=\"" . $variable1) . "\"/>");
+  printf("Print this: %s", $variable2);
+}
+?>

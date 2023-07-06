@@ -1,0 +1,7 @@
+<?php
+$variable3 = filter_input_array(INPUT_GET, ["t" => FILTER_SANITIZE_FULL_SPECIAL_CHARS]);
+$variable0 = json_encode($variable3, ENT_COMPAT);
+$variable1 = $variable0;
+$variable2 = (("Hello to \"" . $variable1) . "\"");
+printf("Print this: %d", $variable2);
+?>

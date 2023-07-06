@@ -1,0 +1,7 @@
+<?php
+$variable3 = $variable4;
+$variable0 = http_build_query($variable3);
+$variable1 = $variable0;
+$variable2 = ("Hello" . $variable1);
+echo($variable2);
+?>

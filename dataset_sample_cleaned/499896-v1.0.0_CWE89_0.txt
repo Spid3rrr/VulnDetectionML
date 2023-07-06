@@ -1,0 +1,17 @@
+<?php
+$variable8 = new PDO("mysql:host=mysql;port=3306;dbname=myDB", "username", "password");
+$variable6 = ["safe1", "safe2"];
+$variable5 = $variable1;
+$variable5 = $variable5["t"];
+if(in_array($variable5, $variable6, true))
+{
+  $variable0 = $variable5;
+  $variable2 = $variable0;
+  $variable4 = (("SELECT * FROM users WHERE password =\"" . $variable2) . "\";");
+  $variable7 = $variable8->prepare($variable4);
+  $variable3 = $variable7->execute([]);
+  foreach ($variable7->fetchAll() as $variable9){
+    echo(htmlentities(print_r($variable9, true)));
+  }
+}
+?>

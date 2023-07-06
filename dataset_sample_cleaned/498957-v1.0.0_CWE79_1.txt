@@ -1,0 +1,11 @@
+<?php
+$variable3 = $variable4;
+$variable3 = $variable3["t"];
+if(settype($variable3, "string"))
+{
+  $variable0 = $variable3;
+  $variable1 = $variable0;
+  $variable2 = (("Hello to \"" . $variable1) . "\"");
+  print($variable2);
+}
+?>

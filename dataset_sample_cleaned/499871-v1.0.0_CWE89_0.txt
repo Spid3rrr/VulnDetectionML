@@ -1,0 +1,18 @@
+<?php
+$variable0 = "mysql";
+$variable2 = "username";
+$variable4 = "password";
+$variable8 = "myDB";
+$variable12 = new mysqli($variable0, $variable2, $variable4, $variable8);
+$variable7 = $variable10;
+$variable1 = json_encode($variable7, ENT_COMPAT);
+$variable3 = $variable1;
+$variable6 = (("SELECT * FROM users WHERE password =\"" . $variable3) . "\";");
+$variable9 = mysqli_prepare($variable12, $variable6);
+mysqli_stmt_execute($variable9);
+$variable5 = mysqli_stmt_get_result($variable9);
+while(($variable11 = $variable5->fetch_row()))
+{
+  echo(htmlentities(print_r($variable11, true)));
+}
+?>
